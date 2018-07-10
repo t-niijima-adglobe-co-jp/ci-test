@@ -14,3 +14,7 @@ workflows:
   build-all:
     jobs:
       - test
+          filters:
+            branches:
+              only:
+                - master
