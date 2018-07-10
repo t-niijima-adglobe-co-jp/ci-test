@@ -8,3 +8,9 @@ jobs:
       - checkout
 
       - run: echo test success!!
+
+workflows:
+  version: 2
+  build-all:
+    jobs:
+      - test
