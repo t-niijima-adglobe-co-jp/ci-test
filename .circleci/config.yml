@@ -11,8 +11,9 @@ jobs:
 
 workflows:
   version: 2
+  test_flow:
     jobs:
-      - test
+      - test:
           filters:
             branches:
               only:
