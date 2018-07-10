@@ -1,0 +1,10 @@
+version: 2
+jobs:
+  test:
+    docker:
+      - image: circleci/php:7.2.1-apache-node-browsers
+
+    steps:
+      - checkout
+
+      - run: echo test success!!
